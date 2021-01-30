@@ -4,7 +4,7 @@ bookingBtn.addEventListener("click", function () {
     const firstClassCount = getInputValue("firstClass");
     if (firstClassCount == 0 && economyClassCount == 0) {
         alert(
-            'Mega city bus.com says, you need to fill up ticket fields.'
+            'For mega city bus service, you need to fill up ticket fields.'
         )
     } else {
         document.getElementById('confirmation-message').style.display = 'flex';
