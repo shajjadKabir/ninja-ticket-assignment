@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url("images/bus.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container {
+    width: 1200px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 6px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+nav ul li a:hover,
+a.active {
+    background-color: #52AF3A;
+    border-radius: 5px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 70px;
+    align-items: center;
+}
+
+#booking-area {
+    display: none;
+    position: absolute;
+    float: right;
+    background-color: rgba(18, 3, 148, 0.9);
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(166, 183, 192);
+}
+
+.booking-content {
+    color: #fff;
+    width: 100%;
+    float: left;
+    margin-left: 50px;
+}
+
+.booking-content h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+}
+
+.booking-form {
+    background-color: rgb(131, 81, 91);
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    float: right;
+    width: 80%;
+    margin: 50px 0px 0px 80px;
+}
+
+.booking-form h3 {
+    margin: 10px 0px;
+}
+
+.booking-form .input-group {
+    margin: 10px 0;
+}
+
+.booking-form .calculations {
+    margin: 10px 0;
+}
+
+.booking-form .calculations p {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.booking-form input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #F3F5FF;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.booking-form .inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.booking-details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.booking-details header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.f-class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inp-width {
+    min-width: 100px;
+}
+
+.btn {
+    padding: 10px 15px;
+    margin: 0px 10px 0px 10px;
+    background-color: #52AF3A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-style {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background-color: #52AF3A;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.change-value-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.input-value {
+    font-size: 18px;
+}
+
+#book-now {
+    cursor: pointer;
+}
+
+#confirmation-message {
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(18, 3, 148, 0.9);
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(166, 183, 192);
+}
+
+#cross-sign {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(14, 11, 11);
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#confirmation-message h2 {
+    color: rgb(37, 204, 37);
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+.table-details {
+    border: 1px solid #dee2e6;
+}
+
+.table {
+    width: 100%;
+}
+
+.table-details td,
+.table-details th {
+    border: 1px solid #d9dcdf;
+}
+
+.table td,
+.table th {
+    padding: 4%;
+    font-weight: 800;
+}
+
